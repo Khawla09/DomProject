@@ -1,0 +1,105 @@
+/* body {
+  font-family: "Arial", sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap");
+.todoList {
+  font-family: "Playwrite US Trad", cursive;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background: #ffb4a2;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  height: auto;
+  margin-bottom: 20px;
+
+  /* margin: 100px; */
+}
+
+.todoList h1 {
+  text-align: center;
+  color: rgb(247, 237, 237);
+  margin-top: 100px;
+}
+
+.task-input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.task-input button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: none;
+  background: rgb(134, 26, 26);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.task-input button:hover {
+  background: rgb(193, 11, 11);
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: background 0.3s ease;
+}
+
+.task-list li.completed {
+  text-decoration: line-through;
+  background: #d4edda;
+  color: #155724;
+}
+
+.task-list li button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.task-list li button.complete {
+  color: #28a745;
+}
+
+.task-list li button.delete {
+  color: #dc3545;
+}
